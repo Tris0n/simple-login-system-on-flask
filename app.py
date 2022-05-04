@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 app.config["SECRET_KEY"] = environ.get("SECRET_KEY")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://tris0n:@localhost/api"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://user:@localhost/api"
 
 db = SQLAlchemy(app)
 
@@ -165,4 +165,4 @@ def set_admin(isadmin):
 
         return Response("Sucess!")
 
-app.run(host="127.0.0.1", port=5000, debug=False)
+#app.run(host="127.0.0.1", port=5000, debug=False)
