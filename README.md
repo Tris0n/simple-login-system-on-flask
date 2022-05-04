@@ -23,4 +23,5 @@ python3 app.py
 ```
 ----------------------------------------------------
 
+uncomment line 168 to start the server
 access in you browser -> http://127.0.0.1:5000/
